@@ -22,7 +22,7 @@ INNAME: SEA_WS'in'SEA_WS;
 
 ENDSWITCH: TAG_WHITESPACE* 'endswitch' TAG_WHITESPACE*;
 CONTROLLER:
-TAG_WHITESPACE* 'controller' SEA_WS*
+TAG_WHITESPACE* 'Controller' SEA_WS*
 ;
 TO:TAG_WHITESPACE* '->'TAG_WHITESPACE* 'val'TAG_WHITESPACE*;
 
@@ -31,7 +31,7 @@ CONTROLS:
 'controls'SEA_WS*
 ;
 PAGE:
-'page'SEA_WS*
+'Page'SEA_WS*
 ;
 EXTENDS:
 'extends'SEA_WS*
@@ -45,6 +45,7 @@ VAL:
 GOTONAME:
 'goto'SEA_WS*
 ;
+
 PRINTNAME:TAG_WHITESPACE*'print'TAG_WHITESPACE*;
 
 
@@ -292,8 +293,8 @@ ELSE:'else' SEA_WS*;
 VALID: VAL TAG_NAME (COMMA TAG_NAME)* ')';
 //checked(name)//to on checkbox
 CHECKED:'checked' TAG_WHITESPACE*'('TAG_NAME  ')';
-//required(name) must be there
-REQUIRED:'required' TAG_WHITESPACE*'('TAG_NAME  ')';
+//requirde(name) must be there
+REQUIRDE:'requirde' TAG_WHITESPACE*'('TAG_NAME  ')';
 ///novalied
 NOVALIED:'novalied';
 VALIDMM:'valeid('TAG_WHITESPACE* DIGIT TAG_WHITESPACE* COMMA TAG_WHITESPACE* DIGIT+ TAG_WHITESPACE* COMMA TAG_WHITESPACE* DIGIT+ TAG_WHITESPACE*')';
